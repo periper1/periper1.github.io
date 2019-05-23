@@ -1,0 +1,10 @@
+<head></head>
+<body style="text-align: center;
+background-color: yellow;"></body>
+<h1 style="color: red;"">단어수 세기</h1>
+<a href='{% url "about" %}'>이 앱에 대해서</a>
+<form action="{% url 'count' %}">
+    <textarea cols="40" rows="10" name="fulltext"></textarea>
+    <br>
+    <input type="submit" value="글자 수 세기"/>
+</form>
